@@ -1,0 +1,336 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.2px;
+    color: #E0E0E0;
+    background-color: #1E1E1E;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Noto Serif', serif;
+    font-size: 39px;
+    line-height: 42px;
+    margin-bottom: 50px;
+    color: #E0E0E0;
+}
+
+h2 {
+    font-family: 'Noto Serif', serif;
+    font-size: 28px;
+    line-height: 30px;
+    text-align: center;
+    color: #E0E0E0;
+    margin: 40px 0 30px 0;
+}
+
+p {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+a {
+    text-decoration: none;
+    color: #BBAFF2; /* Light purple for links */
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #E0E0E0; /* Light gray on hover */
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #4B0082; /* Dark purple */
+    color: #E0E0E0;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    font-size: 15px;
+    text-align: right;
+    padding: 12px 0;
+    position: fixed;
+    z-index: 1;
+}
+
+.navbar a {
+    margin-right: 40px;
+    color: #E0E0E0;
+}
+
+.navbar a:active {
+    text-decoration: underline;
+}
+
+.right a {
+    float: right;
+}
+
+.left a {
+    float: left;
+    margin-right: 75%;
+}
+
+.container {
+    width: 100%;
+}
+
+.top {
+    background-color: #4B0082; /* Dark purple */
+    height: 650px;
+}
+
+.clear {
+    background-color: #2E2E2E; /* Darker background */
+    height: auto;
+}
+
+.nav-top {
+    border-top: 8px solid #4B0082; /* Dark purple */
+}
+
+.row {
+    max-width: 63rem;
+    margin: auto;
+    display: block;
+}
+
+.content {
+    padding: 22px;
+}
+
+.wrapper {
+    display: flex;
+    padding: 22px;
+}
+
+.sidepanel {
+    width: 200px;
+    margin-top: 120px;
+    background-color: #2E2E2E; /* Darker background */
+    overflow-x: hidden;
+    position: fixed;
+    height: 80%;
+}
+
+.sidepanel a.title {
+    font-family: 'Noto Serif', serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    text-decoration: none;
+    color: #E0E0E0;
+    display: block;
+    padding-bottom: 12px;
+}
+
+.sidepanel a.section, 
+.sidepanel a.sub-section {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    line-height: 30px;
+    display: block;
+    text-decoration: none;
+    color: #BBAFF2; /* Light purple */
+}
+
+.sidepanel a.sub-section {
+    padding-left: 20px;
+}
+
+.sidepanel a.title:hover,
+.sidepanel a.section:hover,
+.sidepanel a.sub-section:hover {
+    text-decoration: underline;
+}
+
+.main-col {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.main-col p {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 36px;
+    color: #E0E0E0;
+}
+
+.right-col {
+    margin-top: 100px;
+    text-align: left;
+    width: 100%;
+    margin-left: 220px;
+}
+
+.right-col h1 {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 24px;
+}
+
+.right-col h2 {
+    font-size: 21px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    text-align: left;
+    margin: 20px 0 10px 0;
+}
+
+.right-col p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 36px;
+}
+
+.right-col a {
+    color: #BBAFF2; /* Light purple */
+    text-decoration: underline;
+}
+
+.right-col ol {
+    margin-block-start: 10px;
+}
+
+.logo {
+    width: 150px;
+    float: left;
+    margin: -10px 30px;
+}
+
+.col {
+    width: 50%;
+    float: left;
+}
+
+.top-info {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    color: #E0E0E0;
+}
+
+.divider {
+    width: 40px;
+    height: 4px;
+    background: #4B0082; /* Dark purple */
+    border-radius: 30px;
+    margin: auto;
+    margin: 8px 0;
+}
+
+.left {
+    margin: 20px 0;
+}
+
+.footer {
+    float: left;
+    width: 100%;
+    padding: 90px 0 20px;
+    font-size: 15px;
+    text-align: center;
+    background-color: #2E2E2E; /* Darker background */
+}
+
+.footer a {
+    color: #BBAFF2; /* Light purple */
+}
+
+/* Responsive Break Points */
+
+/* Extra small-small devices (phones, 420px and down) */
+@media only screen and (max-width: 420px) {
+    .logo {
+        width: 100px;
+    }
+
+    .navbar {
+        height: auto;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .links {
+        float: none;
+    }
+}
+
+/* Extra small devices (phones, 650px and down) */
+@media only screen and (max-width: 650px) {
+    .logo {
+        width: 115px;
+        margin: -10px 0;
+    }
+
+    .navbar a {
+        padding-bottom: 5px;
+        margin-left: 40px;
+        margin-right: 0;
+    }
+
+    .resp-break {
+        display: block;
+        margin: 17px;
+    }
+
+    .main-col {
+        width: 100%;
+    }
+
+    .wrapper {
+        display: block;
+    }
+
+    .sidepanel {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        height: auto;
+    }
+
+    .sidepanel a.title,
+    .sidepanel a.section,
+    .sidepanel a.sub-section {
+        text-align: center;
+    }
+
+    .left {
+        margin: 20px auto;
+    }
+
+    .right-col {
+        position: relative;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 650px and up) */
+@media only screen and (min-width: 650px) {
+    .logo {
+        margin: -10px 0;
+    }
+
+    .right a {
+        float: right;
+        padding-bottom: 5px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .logo {
+        margin: -10px 0;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) {}
+
+/* End Break Points */
